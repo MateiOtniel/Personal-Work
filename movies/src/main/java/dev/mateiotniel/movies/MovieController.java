@@ -1,6 +1,5 @@
 package dev.mateiotniel.movies;
 
-import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,8 +22,8 @@ public class MovieController {
         return new ResponseEntity<>(movieService.allMovies(), HttpStatus.OK);
     }
 
-    @GetMapping("/{id}") //searching a movie by it's id
-    public ResponseEntity<Optional<Movie>> getSingleMovie(@PathVariable ObjectId id){
-        return new ResponseEntity<>(movieService.singleMovie(id), HttpStatus.OK);
+    @GetMapping("/{imdbId}") //searching a movie by it's imdbId
+    public ResponseEntity<Optional<Movie>> getSingleMovie(@PathVariable String imdbId){
+        return new ResponseEntity<>(movieService.singleMovie(imdbId), HttpStatus.OK);
     }
 }
