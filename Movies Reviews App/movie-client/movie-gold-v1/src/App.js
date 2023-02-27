@@ -1,7 +1,6 @@
 import './App.css';
 import api from "./api/axiosConfig";
 import {useState, useEffect} from 'react';
-import userEvent from '@testing-library/user-event';
 
 function App() {
 
