@@ -1,7 +1,7 @@
 ### Employee Managament App - full stack application
 
 #### Used technologies:
-* Spring Framework (Java), MySql - backend
+* Spring Boot Framework (Java), MySql - backend
 * React JS, Bootstrap - frontend
 * Axios - for connecting frontend with backend
 
