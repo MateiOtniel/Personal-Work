@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="s" prefHeight="656.0" prefWidth="943.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gamification.accesa.controller.QuizController">
+   <children>
+      <TextArea fx:id="descriptionTextArea" editable="false" layoutX="166.0" layoutY="99.0" prefHeight="297.0" prefWidth="610.0" />
+      <TextField fx:id="answerTextField" alignment="CENTER" layoutX="166.0" layoutY="457.0" prefHeight="48.0" prefWidth="610.0" promptText="your asnwer" />
+      <Label fx:id="titleLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="165.0" layoutY="22.0" prefHeight="48.0" prefWidth="610.0" text="Label" />
+      <Button layoutX="382.0" layoutY="539.0" mnemonicParsing="false" onAction="#submitAnswer" prefHeight="35.0" prefWidth="179.0" text="Submit answer" />
+      <Button fx:id="backButton" layoutX="30.0" layoutY="30.0" mnemonicParsing="false" onAction="#switchToMainController" prefHeight="40.0" prefWidth="40.0" />
+      <Label fx:id="errorLabel" alignment="CENTER" layoutX="338.0" layoutY="591.0" prefHeight="18.0" prefWidth="266.0" text="Label" />
+   </children>
+</AnchorPane>

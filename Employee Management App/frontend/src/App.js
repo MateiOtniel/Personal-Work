@@ -13,29 +13,29 @@ import ViewUser from "./users/ViewUser";
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route
-            exact
-            path="/adduser"
-            element={<AddUser />}
-          />
-          <Route
-            exact
-            path="/edituser/:id"
-            element={<EditUser />}
-          />
-          <Route
-            exact
-            path="/userdetails/:id"
-            element={<ViewUser />}
-          />
-        </Routes>
-      </Router>
-    </div>
+      <div className="App">
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route
+                exact
+                path="/adduser"
+                element={<AddUser />}
+            />
+            <Route
+                exact
+                path="/edituser/:id"
+                element={<EditUser />}
+            />
+            <Route
+                exact
+                path="/userdetails/:id"
+                element={<ViewUser />}
+            />
+          </Routes>
+        </Router>
+      </div>
   );
 }
 

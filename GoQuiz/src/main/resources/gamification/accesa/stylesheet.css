@@ -1,0 +1,170 @@
+@font-face {
+    font-family: Monocraft;
+    font-size: 16;
+    src: url('Monocraft.otf');
+}
+
+.root{
+    -fx-font-family: Monocraft;
+    -fx-font-size: 15;
+    -fx-primary-color: #002B5B;
+    -fx-secondary-color: #57C5B6;
+    -fx-white: #FFFFFF;
+    -fx-black: #000000;
+}
+
+Label{
+    -fx-font-family: Monocraft;
+    -fx-font-size: 17;
+    -fx-text-fill: -fx-white;
+    -fx-padding: 0;
+}
+
+AnchorPane {
+    -fx-background-color: -fx-primary-color;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+Button{
+    -fx-background-color: -fx-secondary-color;
+    -fx-text-fill: -fx-white;
+    -fx-font-size: 17;
+    -fx-border-color: -fx-white;
+    -fx-border-width: 1.3px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0, 0, 0);
+}
+
+Button:hover{
+    -fx-opacity: 0.9;
+    -fx-cursor: hand;
+}
+
+#errorLabel{
+    -fx-text-fill: #FF0000;
+    -fx-font-size: 12;
+}
+
+#logoutBtn{
+    -fx-background-image: url('images/logout.png');
+    -fx-background-size: contain;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border: 0;
+    -fx-effect: none;
+}
+
+.list-cell {
+    -fx-background-color: transparent;
+    -fx-pref-height: 70px;
+}
+.list-view {
+    -fx-background-color: transparent;
+}
+
+.list-view .scroll-bar{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border: 0;
+}
+
+.list-view .increment-button ,.list-view .decrement-button {
+    -fx-background-color:transparent;
+    -fx-border-color:transparent;
+}
+
+.list-view .scroll-bar:vertical .thumb {
+    -fx-background-color: #FFFFFF;
+    -fx-background-insets: 5, 5, 5;
+    -fx-background-radius: 5;
+}
+
+.list-view .scroll-bar:horizontal {
+    -fx-scale-x: 0;
+}
+
+.virtual-flow > .corner {
+    -fx-background-color: transparent;
+}
+
+#titleLabel{
+    -fx-font-size: 30;
+}
+
+#descriptionTextArea{
+    -fx-background-color: -fx-white;
+    -fx-background-radius: 5px;
+    -fx-background-insets: 0;
+    -fx-border-radius: 5px;
+    -fx-font-size: 17;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0, 0, 0);
+}
+
+#answerTextField{
+    -fx-background-color: -fx-white;
+    -fx-background-radius: 5px;
+    -fx-background-insets: 0;
+    -fx-padding: 0 10px;
+    -fx-border-radius: 5px;
+    -fx-font-size: 17;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.6), 5, 0, 0, 0);
+}
+
+#answerTextField:focused{
+    -outline: none;
+}
+
+.text-area *.text{
+    -fx-text-alignment: center;
+}
+
+#backButton{
+    -fx-background-image: url('images/back.png');
+    -fx-background-size: contain;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border: 0;
+    -fx-effect: none;
+}
+
+.image-view{
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.image-view:hover{
+    -fx-opacity: 0.9;
+    -fx-cursor: hand;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-scale-z: 1.1;
+}
+
+#bronzeImage{
+    -fx-image: url("images/bronze.png");
+}
+
+#silverImage{
+    -fx-image: url("images/silver.png");
+}
+
+#goldImage{
+    -fx-image: url("images/gold.png");
+}
+
+#creatorImage{
+    -fx-image: url("images/creator.png");
+}
+
+#intellectualImage{
+    -fx-image: url("images/intellectual.png");
+}
+
+#royalImage{
+    -fx-image: url("images/royal.png");
+}
